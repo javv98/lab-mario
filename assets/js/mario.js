@@ -112,6 +112,13 @@ class Mario {
     }
 
     animate () {
+
+        if (this.vx < 0) {
+            this.sprite.src = "assets/imgs/sprites/sprite-mario-2.png"
+        } if (this.vx > 0) {
+            this.sprite.src = "assets/imgs/sprites/sprite-mario.png"
+        }
+        
         if (this.vy !== 0) {
             this.sprite.vFrameIndex = 0
             this.sprite.hFrameIndex = 0
