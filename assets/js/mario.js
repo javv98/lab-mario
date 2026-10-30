@@ -118,11 +118,6 @@ class Mario {
         } if (this.vx > 0) {
             this.sprite.src = "assets/imgs/sprites/sprite-mario.png"
         }
-        
-        if (this.vy !== 0) {
-            this.sprite.vFrameIndex = 0
-            this.sprite.hFrameIndex = 0
-        }
 
         if (this.vx !== 0 && this.vy === 0) {
             if (this.marioCount % MARIO_MOVE === 0 && this.marioMoving === true) {
@@ -134,6 +129,11 @@ class Mario {
             this.sprite.hFrameIndex = 1  
             this.marioMoving = true         
             }
+        }
+
+        if (this.vy !== 0) {
+            this.sprite.vFrameIndex = 0
+            this.sprite.hFrameIndex = 0
         }
 
         if (this.vy === 0 && this.vx === 0) {
