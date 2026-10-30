@@ -1,5 +1,10 @@
 const CANVAS_W = 1000
 const CANVAS_H = 500
-const MARIO_W = 20
-const MARIO_H = 20
+const MARIO_W = 40
+const MARIO_H = 40
 const MARIO_VX = 3
+const MARIO_VY = 10
+const MARIO_AY = 0.4
+const BG_FLOOR = 55
+const MARIO_MOVE = 12 // Frames a los que se le mueve los pies
+const BG_VX = 2
